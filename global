@@ -1,0 +1,3 @@
+# Set default File Manager as Nautilus
+xdg-mime default nautilus.desktop inode/directory application/x-gnome-saved-search
+gsettings set org.gnome.desktop.background show-desktop-icons true
