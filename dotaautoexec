@@ -112,9 +112,5 @@ alias "attacka_off" "dota_player_units_auto_attack 0; alias attackauto_toggle at
 
 // Toggle Auto Attack After Spell
 alias "attackautospell_toggle" "attackas_off"
-alias "attackas_off" "dota_player_units_auto_attack_after_spell 0; alias attackautospell_toggle attackas_on;dota_center_message 0.25 
-
-AutoAttackSpell_Off"
-alias "attackas_on" "dota_player_units_auto_attack_after_spell 1; alias attackautospell_toggle attackas_off;dota_center_message 0.25 
-
-AutoAttackSpell_On"
+alias "attackas_off" "dota_player_units_auto_attack_after_spell 0; alias attackautospell_toggle attackas_on;dota_center_message 0.25 AutoAttackSpell_Off"
+alias "attackas_on" "dota_player_units_auto_attack_after_spell 1; alias attackautospell_toggle attackas_off;dota_center_message 0.25 AutoAttackSpell_On"
