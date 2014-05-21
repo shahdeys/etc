@@ -1,5 +1,5 @@
 // Minimal AutoExec Config for DOTA 2
-// Optimized for Microsoft Digital Media Keyboard and Logitech G700s Mouse
+// Optimized for Generic Keyboard and Logitech G700s Mouse
 // by Skywalk3r
 
 
@@ -26,14 +26,15 @@ dota_health_marker_minor_alpha "128"	// Opacity minor healthbar divider 		(defau
 dota_hud_healthbar_number "1"		// Health number above the lifebar on		(default 1)
 dota_screen_shake "0"			// Screen shake on certain spell effects	(default 1)
 dota_force_right_click_attack "0" 	// Rightclick deny disabled			(default 0)
-dota_disable_range_finder "1" 		// Visual spell range indicator activated 	(default 1)
+dota_disable_range_finder "0" 		// Visual spell range indicator activated 	(default 1)
 dota_minimap_hero_size "800" 		// Slightly bigger hero icons on minimap 	(default 600)
 dota_minimap_misclick_time "0.4" 	// Threshold delay to accept minimap clicks 	(default 0.2)
 dota_camera_accelerate "10" 		// Decelerating map scroll 			(50 = insta stop, 1 = smooth slowdown, vanilla DotA would be 
 
 50)
 dota_player_multipler_orders "1"	// Control all units with CTRL click 		(default 0)	
-dota_player_units_auto_attack "1"	// Hero autoattack enabled			(default 1)
+dota_player_units_auto_attack "0"	// Hero autoattack disabled			(default 1)
+dota_player_units_auto_attack_after_spell "0" // Hero autoattack after spell disabled
 dota_camera_speed "6500"		// Scrolling speed 				(vanilla DotA-like is 6500, default 3000)
 dota_camera_disable_zoom "0"		// Disables mousewheel zoom			(default 1)
 dota_unit_fly_bonus_height "10"		// Flying height of air units			(Default 150)
@@ -107,10 +108,14 @@ alias "-show_runebottom" "+dota_camera_follow;+dota_camera_follow;-dota_camera_f
 
 // Toggle Auto Attack
 alias "attackauto_toggle" "attacka_on"
-alias "attacka_on" "dota_player_units_auto_attack 1; alias attackauto_toggle attacka_off;dota_center_message 0.25 AutoAttack_On"
 alias "attacka_off" "dota_player_units_auto_attack 0; alias attackauto_toggle attacka_on;dota_center_message 0.25 AutoAttack_Off"
+alias "attacka_on" "dota_player_units_auto_attack 1; alias attackauto_toggle attacka_off;dota_center_message 0.25 AutoAttack_On"
 
 // Toggle Auto Attack After Spell
 alias "attackautospell_toggle" "attackas_off"
-alias "attackas_off" "dota_player_units_auto_attack_after_spell 0; alias attackautospell_toggle attackas_on;dota_center_message 0.25 AutoAttackSpell_Off"
-alias "attackas_on" "dota_player_units_auto_attack_after_spell 1; alias attackautospell_toggle attackas_off;dota_center_message 0.25 AutoAttackSpell_On"
+alias "attackas_off" "dota_player_units_auto_attack_after_spell 0; alias attackautospell_toggle attackas_on;dota_center_message 0.25 
+
+AutoAttackSpell_Off"
+alias "attackas_on" "dota_player_units_auto_attack_after_spell 1; alias attackautospell_toggle attackas_off;dota_center_message 0.25 
+
+AutoAttackSpell_On"
