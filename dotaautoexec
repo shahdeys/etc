@@ -7,8 +7,8 @@
 // SCRIPT BINDINGS //  Bindings to use the scripts below in the scripts section. Make sure to customize these to your liking.
 /////////////////////
 
-bind "F4" "+show_runetop"       	// Jump camera to top rune and back to hero
-bind "F5" "+show_runebottom"		// Jump camera to bottom rune and back to hero
+bind "o" "+show_runetop"       		// Jump camera to top rune and back to hero
+bind "p" "+show_runebottom"		// Jump camera to bottom rune and back to hero
 bind "x" "quick_courier" 		// Quick Courier Script
 bind "F10" "showgraph"			// Toggle Net_Graph
 
@@ -23,16 +23,16 @@ dota_hud_healthbar_number "1"		// Health number above the lifebar on		(default 1
 dota_screen_shake "0"			// Screen shake on certain spell effects	(default 1)
 dota_force_right_click_attack "0" 	// Rightclick deny disabled			(default 0)
 dota_disable_range_finder "0" 		// Visual spell range indicator activated 	(default 1)
-dota_minimap_hero_size "800" 		// Slightly bigger hero icons on minimap 	(default 600)
-dota_minimap_misclick_time "0.4" 	// Threshold delay to accept minimap clicks 	(default 0.2)
-dota_camera_accelerate "10" 		// Decelerating map scroll 			(50 = insta stop, 1 = smooth slowdown, vanilla DotA would be 50)
+dota_minimap_hero_size "1000" 		// Slightly bigger hero icons on minimap 	(default 600)
+dota_minimap_misclick_time "0"		// Threshold delay to accept minimap clicks 	(default 0.2)
+dota_camera_accelerate "15" 		// Decelerating map scroll 			(50 = insta stop, 1 = smooth slowdown, vanilla DotA would be 50)
 dota_player_multipler_orders "1"	// Control all units with CTRL click 		(default 0)	
 dota_player_units_auto_attack "0"	// Hero autoattack disabled			(default 1)
 dota_player_units_auto_attack_after_spell "0" // Hero autoattack after spell disabled
-dota_camera_speed "6500"		// Scrolling speed 				(vanilla DotA-like is 6500, default 3000)
+dota_camera_speed "7500"		// Scrolling speed 				(vanilla DotA-like is 6500, default 3000)
 dota_camera_disable_zoom "0"		// Disables mousewheel zoom			(default 1)
-dota_unit_fly_bonus_height "10"		// Flying height of air units			(Default 150)
-dota_reset_camera_on_spawn "1"		// Center screen on hero after respawn		(Default 1)
+dota_unit_fly_bonus_height "50"		// Flying height of air units			(Default 150)
+dota_reset_camera_on_spawn "0"		// Center screen on hero after respawn		(Default 1)
 dota_always_show_player_names "0"	// Always show player names
 dota_ability_quick_cast "1"		// Doubletapping to selfcast
 dota_unit_multiple_selection "1"	// ???
@@ -50,8 +50,8 @@ dota_pain_multiplier "0.4"		// (Default 0.8)
 //volume "0.05"				// Volume adjusted for teamspeak
 snd_musicvolume "0"			// Ingame music volume (Min "0" Max "1.0")
 fps_max "120" 				// Max FPS for client to render					(Default 120)
-mat_vsync "0" 				// VSYNC on/off							(0 Disables, 1 Enables)
-mat_triplebuffered "0"			// Enable with vsync if fps is less than 60			(0 Disables, 1 Enables)
+mat_vsync "1" 				// VSYNC on/off							(0 Disables, 1 Enables)
+mat_triplebuffered "1"			// Enable with vsync if fps is less than 60			(0 Disables, 1 Enables)
 engine_no_focus_sleep "0"		// Run Dota 2 at full fps when tabbed out			(Default 1)
 
 
