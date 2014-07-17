@@ -11,8 +11,6 @@ bind "F4" "+show_runetop"       	// Jump camera to top rune and back to hero
 bind "F5" "+show_runebottom"		// Jump camera to bottom rune and back to hero
 bind "x" "quick_courier" 		// Quick Courier Script
 bind "F10" "showgraph"			// Toggle Net_Graph
-bind "v" "attackauto_toggle"		// Toggle Auto Attack
-bind "b" "attackautospell_toggle" 	// Toggle Auto Attack After Spell
 
 //////////////
 // SETTINGS // Most of these settings can not be found in the regular options menu. Feel free to edit them to your likes.
@@ -51,7 +49,7 @@ dota_pain_multiplier "0.4"		// (Default 0.8)
 
 //volume "0.05"				// Volume adjusted for teamspeak
 snd_musicvolume "0"			// Ingame music volume (Min "0" Max "1.0")
-fps_max "60" 				// Max FPS for client to render					(Default 120)
+fps_max "120" 				// Max FPS for client to render					(Default 120)
 mat_vsync "0" 				// VSYNC on/off							(0 Disables, 1 Enables)
 mat_triplebuffered "0"			// Enable with vsync if fps is less than 60			(0 Disables, 1 Enables)
 engine_no_focus_sleep "0"		// Run Dota 2 at full fps when tabbed out			(Default 1)
@@ -97,11 +95,7 @@ alias "+show_runebottom" "dota_camera_set_lookatpos 3035.773438 -2472.680176"
 alias "-show_runebottom" "dota_select_all; dota_select_all"
 
 // Toggle Auto Attack
-alias "attackauto_toggle" "attacka_on"
-alias "attacka_off" "dota_player_units_auto_attack 0; alias attackauto_toggle attacka_on;"
-alias "attacka_on" "dota_player_units_auto_attack 1; alias attackauto_toggle attacka_off;"
+bindtoggle "v" dota_player_units_auto_attack; 
 
 // Toggle Auto Attack After Spell
-alias "attackautospell_toggle" "attackas_off"
-alias "attackas_off" "dota_player_units_auto_attack_after_spell 0; alias attackautospell_toggle attackas_on;"
-alias "attackas_on" "dota_player_units_auto_attack_after_spell 1; alias attackautospell_toggle attackas_off;"
+bindtoggle "b" dota_player_units_auto_attack_after_spell; 
