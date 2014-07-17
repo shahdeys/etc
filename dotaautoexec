@@ -31,7 +31,7 @@ dota_player_units_auto_attack "0"	// Hero autoattack disabled			(default 1)
 dota_player_units_auto_attack_after_spell "0" // Hero autoattack after spell disabled
 dota_camera_speed "7500"		// Scrolling speed 				(vanilla DotA-like is 6500, default 3000)
 dota_camera_disable_zoom "0"		// Disables mousewheel zoom			(default 1)
-dota_unit_fly_bonus_height "50"		// Flying height of air units			(Default 150)
+dota_unit_fly_bonus_height "150"	// Flying height of air units			(Default 150)
 dota_reset_camera_on_spawn "0"		// Center screen on hero after respawn		(Default 1)
 dota_always_show_player_names "0"	// Always show player names
 dota_ability_quick_cast "1"		// Doubletapping to selfcast
