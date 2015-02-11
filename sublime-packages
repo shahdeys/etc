@@ -1,0 +1,15 @@
+#List of installed packages (using Bittersweet for Colorsublime)
+	"installed_packages":
+	[
+		"AngularJS",
+		"BracketHighlighter",
+		"ColorPicker",
+		"Colorsublime",
+		"DocBlockr",
+		"HTML Snippets",
+		"JavaScript & NodeJS Snippets",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"Theme - Soda"
+	]
