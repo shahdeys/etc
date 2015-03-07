@@ -1,0 +1,35 @@
+// Minimal AutoExec Config for CS:GO
+// Optimized for Generic Keyboard and Logitech G700s Mouse
+// DPI - 550
+// In Game Sensitivity - 1.57
+// Windows Tick - 6
+// by Skywalk3r
+
+
+//Switch to Primary Weapon to Secondary Weapon and vice versa
+bind "Q" "invnextnongrenade"
+
+//Zoom in Radar 
+bind "E" "+radar"
+alias "+radar" "+use; cl_radar_always_centered 0; cl_radar_scale 0.30"
+alias "-radar" "-use; cl_radar_always_centered 1; cl_radar_scale 0.60"
+
+
+//Show net graph information when viewing scoreboard
+net_graph "1"
+net_graphheight "9999"
+bind "TAB" "+scorenet"
+alias "+scorenet" "+showscores; net_graphheight 0"
+alias "-scorenet" "-showscores; net_graphheight 9999"
+
+//Disable 'use item' key for buy menu
+cl_use_opens_buy_menu 0
+
+//Zoom sensitivity
+zoom_sensitivity_ratio_mouse 0.76
+
+//Writing config *NEEDED*
+host_writeconfig
+
+//Disable Auto Weapon Switch
+cl_autowepswitch 0
