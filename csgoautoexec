@@ -6,6 +6,9 @@
 // by Skywalk3r
 
 
+//Enable voice by default
+voice_enable 1
+
 //Switch to Primary Weapon to Secondary Weapon and vice versa
 bind "Q" "invnextnongrenade"
 
@@ -33,3 +36,9 @@ host_writeconfig
 
 //Disable Auto Weapon Switch
 cl_autowepswitch 0
+
+//Buffer delay
+snd_mixahead "0.05"
+
+//Toggle voice
+bind "v" "toggle voice_enable"
