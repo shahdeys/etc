@@ -42,3 +42,17 @@ snd_mixahead "0.05"
 
 //Toggle voice
 bind "v" "toggle voice_enable"
+
+cl_crosshairsize 4
+cl_crosshairstyle 3
+cl_crosshairgap -18
+cl_crosshairthickness 1 
+cl_crosshair_drawoutline 1
+
+//Switch from PTT to Toggle Voice On/Off
+alias voiceon "+voicerecord; bind f voiceoff"
+alias voiceoff "-voicerecord; bind f voiceon"
+bind "f" "voiceon"
+
+//Default: PTT
+bind "f" "+voicerecord"
