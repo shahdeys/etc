@@ -5,7 +5,6 @@
 // Windows Tick - 6
 // by Skywalk3r
 
-
 //Enable voice by default
 voice_enable 1
 
@@ -16,7 +15,6 @@ bind "Q" "invnextnongrenade"
 bind "E" "+radar"
 alias "+radar" "+use; cl_radar_always_centered 0; cl_radar_scale 0.30"
 alias "-radar" "-use; cl_radar_always_centered 1; cl_radar_scale 0.60"
-
 
 //Show net graph information when viewing scoreboard
 net_graph "1"
@@ -29,10 +27,7 @@ alias "-scorenet" "-showscores; net_graphheight 9999"
 cl_use_opens_buy_menu 0
 
 //Zoom sensitivity
-zoom_sensitivity_ratio_mouse 0.76
-
-//Writing config *NEEDED*
-host_writeconfig
+zoom_sensitivity_ratio_mouse 0.70
 
 //Disable Auto Weapon Switch
 cl_autowepswitch 0
@@ -43,16 +38,28 @@ snd_mixahead "0.05"
 //Toggle voice
 bind "v" "toggle voice_enable"
 
+//crosshair shit
 cl_crosshairsize 4
 cl_crosshairstyle 3
-cl_crosshairgap -18
-cl_crosshairthickness 1 
+cl_crosshairgap -5
+cl_crosshairthickness 0.5 	
 cl_crosshair_drawoutline 1
 
-//Switch from PTT to Toggle Voice On/Off
-alias voiceon "+voicerecord; bind f voiceoff"
-alias voiceoff "-voicerecord; bind f voiceon"
-bind "f" "voiceon"
+//max allowable ping for searching
+mm_dedicated_search_maxping 80
 
-//Default: PTT
-bind "f" "+voicerecord"
+//Switch from PTT to Toggle Voice On/Off
+alias voiceon "+voicerecord; bind c voiceoff"
+alias voiceoff "-voicerecord; bind c voiceon"
+bind "c" "voiceon"
+
+//Default: PTT and Enable Voice
+alias +PTT "voice_enable 1; +voicerecord"; 
+alias -PTT "-voicerecord"; 
+bind "F" +PTT 
+
+//Show player count as a number
+cl_hud_playercount_showcount 1
+
+//Writing config *NEEDED*
+host_writeconfig
