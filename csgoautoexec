@@ -59,7 +59,7 @@ alias -PTT "-voicerecord";
 bind "F" +PTT 
 
 //Show player count as a number
-cl_hud_playercount_showcount 1
+cl_hud_playercount_showcount 0
 
 //Writing config *NEEDED*
 host_writeconfig
