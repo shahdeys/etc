@@ -44,3 +44,7 @@ let java_ignore_javadoc=1
 let java_highlight_java_lang_ids=1
 let java_highlight_functions="style"
 let java_minlines = 150
+"New line after curly brace
+inoremap {<cr> {<cr>}<c-o><s-o>
+"Enable copy and paste to OS X
+set clipboard=unnamed
