@@ -33,7 +33,7 @@ mp_buytime 9999
 mp_buy_anywhere 1
 
 //infinite ammo
-//sv_infinite_ammo 1
+sv_infinite_ammo 1
 
 //can hold all grenade types
 ammo_grenade_limit_total 5
