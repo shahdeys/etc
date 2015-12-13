@@ -60,4 +60,4 @@ echo "bot_add_ct - Add a bot to CT team."
 echo "bot_kick - Kicks all the bots from the game."
 echo "bot_stop 1 - Stops the bots, they will stand still and do nothing."
 echo "bot_mimic 1 - Bots will mimic your movements and actions, bot_mimic 0 to turn off again."
-echo "r_cleardecals" - Hide decals
+echo "r_cleardecals - Hide decals"
