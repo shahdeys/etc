@@ -1,0 +1,5 @@
+#!/bin/sh
+# etc/init.d/xflux.sh
+# script to run xflux on startup
+xflux -l 43.653226 -g -79.383184
+exit 0
