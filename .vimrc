@@ -1,6 +1,64 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+"set toggle for pasting
+set pastetoggle=<F2>
+"statusbar
+set laststatus=2
+" air-line
+let g:airline_powerline_fonts = 1
+set t_Co=256
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
 
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+" hides buffers instead of closing them
+set hidden
+" be iMproved, required
+set nocompatible              
+" required
+filetype plugin indent on
+" don't wrap lines                  
+set nowrap
+" set copyindent
+set copyindent
+"autoidenting whitespace
+set shiftwidth=4
+" make searching easier and stronger
+set ignorecase
+set smartcase
+set showmatch
+set smarttab
+set hlsearch
+set incsearch
+
+"more search/command history
+set history=1000
+set undolevels=1000
+set title
+set visualbell
+set noerrorbells
+
+" vundle stuff
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -9,7 +67,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
+Plugin 'vim-airline/vim-airline'
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'Townk/vim-autoclose'
 " All of your Plugins must be added before the following line
@@ -27,24 +85,15 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"enable line numbers
 set nu
+"syntax highlighting
 syntax on
-"Take care of indents for Java.
+"Take care of indents
 set autoindent
 set si
 set shiftwidth=4
-"Java anonymous classes. Sometimes, you have to use them.
-set cinoptions+=j1
-let java_comment_strings=1
-let java_highlight_java_lang_ids=1
-let java_mark_braces_in_parens_as_errors=1
-let java_highlight_all=1
-let java_highlight_debug=1
-let java_ignore_javadoc=1
-let java_highlight_java_lang_ids=1
-let java_highlight_functions="style"
-let java_minlines = 150
 "New line after curly brace
 inoremap {<cr> {<cr>}<c-o><s-o>
-"Enable copy and paste to OS X
+
 set clipboard=unnamed
