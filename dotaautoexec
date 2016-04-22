@@ -1,7 +1,7 @@
-// Minimal AutoExec Config for DOTA 2
+// Minimal AutoExec Config for DOTA 2 Reborn
 // Optimized for Ducky Shine 3 and Logitech G502 Mouse
 // by Shah
-// Updated on 8/30/2015
+// Updated on 4/22/2016
 
 
 /////////////////////
@@ -11,7 +11,6 @@
 bind "O" "+show_runetop"       		// Jump camera to top rune and back to hero
 bind "P" "+show_runebottom"		// Jump camera to bottom rune and back to hero
 bind "x" "quick_courier" 			// Quick Courier Script
-bind "F10" "showgraph"				// Toggle Net_Graph
 
 //////////////
 // SETTINGS // Most of these settings can not be found in the regular options menu. Feel free to edit them to your likes.
@@ -20,48 +19,35 @@ bind "F10" "showgraph"				// Toggle Net_Graph
 dota_health_per_vertical_marker "250" 	// Health segmenting in the lifebar 		(default 250)
 dota_health_marker_major_alpha "255"	// Opacity major healthbar divider 		(default 255, 0=invisible 255=opaque)
 dota_health_marker_minor_alpha "128"	// Opacity minor healthbar divider 		(default 128, 0=invisible 255=opaque)
-dota_hud_healthbar_number "1"		// Health number above the lifebar on		(default 1)
-dota_screen_shake "0"			// Screen shake on certain spell effects	(default 1)
-dota_force_right_click_attack "0" 	// Rightclick deny disabled			(default 0)
-dota_disable_range_finder "0" 		// Visual spell range indicator activated 	(default 1)
-dota_minimap_hero_size "1000" 		// Slightly bigger hero icons on minimap 	(default 600)
-dota_minimap_misclick_time "0"		// Threshold delay to accept minimap clicks 	(default 0.2)
-dota_camera_accelerate "15" 		// Decelerating map scroll 			(50 = insta stop, 1 = smooth slowdown, vanilla DotA would be 50)
-dota_player_multipler_orders "1"	// Control all units with CTRL click 		(default 0)	
-dota_player_units_auto_attack "0"	// Hero autoattack disabled			(default 1)
-dota_player_units_auto_attack_after_spell "0" // Hero autoattack after spell disabled
-dota_camera_speed "7500"		// Scrolling speed 				(vanilla DotA-like is 6500, default 3000)
-dota_camera_disable_zoom "0"		// Disables mousewheel zoom			(default 1)
-dota_unit_fly_bonus_height "150"	// Flying height of air units			(Default 150)
-dota_reset_camera_on_spawn "0"		// Center screen on hero after respawn		(Default 1)
-dota_always_show_player_names "0"	// Always show player names
-dota_ability_quick_cast "1"		// Doubletapping to selfcast
+dota_hud_healthbar_number 1		// Health number above the lifebar on		(default 1)
+dota_screen_shake 0			// Screen shake on certain spell effects	(default 1)
+dota_force_right_click_attack 0 	// Rightclick deny disabled			(default 0)
+dota_enable_range_finder 1 		// Visual spell range indicator activated 	(default 1)
+dota_minimap_hero_size 1000 		// Slightly bigger hero icons on minimap 	(default 600)
+dota_minimap_misclick_time 0		// Threshold delay to accept minimap clicks 	(default 0.2)
+dota_camera_accelerate 15 		// Decelerating map scroll 			(50 = insta stop, 1 = smooth slowdown, vanilla DotA would be 50)
+dota_player_multipler_orders 1	// Control all units with CTRL click 		(default 0)	
+dota_player_units_auto_attack_mode 0	// Hero autoattack disabled (default 0)
+dota_camera_speed 7500		// Scrolling speed 				(vanilla DotA-like is 6500, default 3000)
+dota_camera_disable_zoom 0		// Disables mousewheel zoom			(default 1)
+dota_reset_camera_on_spawn 0		// Center screen on hero after respawn		(Default 1)
+dota_always_show_player_names 0	// Always show player names
+dota_ability_quick_cast 1		// Doubletapping to selfcast
 
 
 //Fade time on visual effects on doing or receiving damage reduced to half duration
 dota_health_hurt_decay_time_max "0.4"	// (Default 0.8)
 dota_health_hurt_decay_time_min "0.15"	// (Default 0.3)
 dota_health_hurt_delay "0.05"		// (Default 0.1)
-dota_pain_decay "0.4"			// (Default 0.8)
 dota_pain_factor "1.5"			// (Default 3)
 dota_pain_fade_rate "1.5"		// (Default 3)
-dota_pain_multiplier "0.4"		// (Default 0.8)
 
 //volume "0.05"				// Volume adjusted for teamspeak
 snd_musicvolume "0"			// Ingame music volume (Min "0" Max "1.0")
 fps_max "120" 				// Max FPS for client to render					(Default 120)
-mat_vsync "1" 				// VSYNC on/off							(0 Disables, 1 Enables)
-mat_triplebuffered "1"			// Enable with vsync if fps is less than 60			(0 Disables, 1 Enables)
 engine_no_focus_sleep "0"		// Run Dota 2 at full fps when tabbed out			(Default 1)
-
-
-// Fitting Netgraph in the topbar for 1680x1050, 1920x1200 and 1920x1080. Play around with net_graphinsetbottom and net_graphinsetright to adjust it for other resolutions
-net_graphinsetbottom "55"		// Position from bottom edge. Put "55" for 1280x800	(Default 0)
-net_graphinsetright "-135"		// Position from right edge. Put "-100" for 1280x800	(Default 0)
-net_graphproportionalfont "0"		// Makes net_graph text smaller 			(Default 1)
-net_graph "1"				// Enables the Net_Graph				(Default 0)
-net_graphheight 927
 con_enable "1"				// Enables the console
+dota_hud_netgraph 1			// Enable Netgraph
 
 ///////////////
 /// NETCODE /// setup possible.
@@ -82,11 +68,6 @@ cl_cmdrate "30"				// Amount of updates sent to server per second 						(Default
 // Courier picks up whole stash and brings it to you with speedup before returning to base
 alias "quick_courier" "dota_courier_deliver; dota_select_courier; dota_courier_burst; +dota_camera_follow; -dota_camera_follow" 
 
-// Net_Graph Toggle Script
-alias "showgraph" "showgraph_off"
-alias "showgraph_on" "net_graph 1; alias showgraph showgraph_off"
-alias "showgraph_off" "net_graph 0; alias showgraph showgraph_on"
-
 // Jump camera to rune positions while pressing the keys and back to hero on release
 alias "+show_runetop" "dota_camera_set_lookatpos -2273.898682 1832.745483"
 alias "-show_runetop" "dota_select_all; dota_select_all"
@@ -94,8 +75,8 @@ alias "-show_runetop" "dota_select_all; dota_select_all"
 alias "+show_runebottom" "dota_camera_set_lookatpos 3035.773438 -2472.680176"
 alias "-show_runebottom" "dota_select_all; dota_select_all"
 
-// Toggle Auto Attack
-bindtoggle "v" dota_player_units_auto_attack; 
+// Toggle Auto Attack (Standard)
+bindtoggle "v" dota_player_units_auto_attack_mode 1; 
 
-// Toggle Auto Attack After Spell
-bindtoggle "b" dota_player_units_auto_attack_after_spell; 
+// Toggle Auto Attack (Always)
+bind "b" dota_player_units_auto_attack_mode 2; 
