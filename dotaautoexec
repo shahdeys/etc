@@ -48,6 +48,7 @@ fps_max "120" 				// Max FPS for client to render					(Default 120)
 engine_no_focus_sleep "0"		// Run Dota 2 at full fps when tabbed out			(Default 1)
 con_enable "1"				// Enables the console
 dota_hud_netgraph 1			// Enable Netgraph
+dota_join_regional_chat_channel 0
 
 ///////////////
 /// NETCODE /// setup possible.
