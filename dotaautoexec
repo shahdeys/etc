@@ -1,16 +1,13 @@
 // Minimal AutoExec Config for DOTA 2 Reborn
 // Optimized for Ducky Shine 3 and Logitech G502 Mouse
 // by Shah
-// Updated on 4/22/2016
+// Updated on 5/25/2016
 
 
 /////////////////////
 // SCRIPT BINDINGS //  Bindings to use the scripts below in the scripts section. Make sure to customize these to your liking.
 /////////////////////
 
-bind "O" "+show_runetop"       		// Jump camera to top rune and back to hero
-bind "P" "+show_runebottom"		// Jump camera to bottom rune and back to hero
-bind "x" "quick_courier" 			// Quick Courier Script
 
 //////////////
 // SETTINGS // Most of these settings can not be found in the regular options menu. Feel free to edit them to your likes.
@@ -66,15 +63,8 @@ cl_cmdrate "30"				// Amount of updates sent to server per second 						(Default
 /// SCRIPT ///
 //////////////
 
-// Courier picks up whole stash and brings it to you with speedup before returning to base
-alias "quick_courier" "dota_courier_deliver; dota_select_courier; dota_courier_burst; +dota_camera_follow; -dota_camera_follow" 
-
-// Jump camera to rune positions while pressing the keys and back to hero on release
-alias "+show_runetop" "dota_camera_set_lookatpos -2273.898682 1832.745483"
-alias "-show_runetop" "dota_select_all; dota_select_all"
-
-alias "+show_runebottom" "dota_camera_set_lookatpos 3035.773438 -2472.680176"
-alias "-show_runebottom" "dota_select_all; dota_select_all"
+bind "O" "dota_camera_set_lookatpos -2273.898682 1832.745483"        		// Jump camera to top rune
+bind "P" "dota_camera_set_lookatpos 3035.773438 -2472.680176"		        // Jump camera to bottom rune and back to hero
 
 // Toggle Auto Attack (Standard)
 bindtoggle "v" dota_player_units_auto_attack_mode 1; 
