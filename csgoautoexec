@@ -73,3 +73,10 @@ voice_scale 0.2
 
 //Writing config *NEEDED*
 host_writeconfig
+
+//Tick Rate Settings
+rate "786432"
+cl_cmdrate "128"
+cl_updaterate "128"
+cl_interp "0"
+cl_interp_ratio "1"
