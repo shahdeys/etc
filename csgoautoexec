@@ -39,7 +39,7 @@ snd_mixahead "0.05"
 bind "v" "toggle voice_enable"
 
 //max allowable ping for searching
-mm_dedicated_search_maxping 80
+mm_dedicated_search_maxping 69
 
 //Switch from PTT to Toggle Voice On/Off
 alias voiceon "+voicerecord; bind c voiceoff"
@@ -71,12 +71,12 @@ cl_crosshairscale "0"
 //voice volume
 voice_scale 0.2
 
-//Writing config *NEEDED*
-host_writeconfig
-
 //Tick Rate Settings
 rate "786432"
 cl_cmdrate "128"
 cl_updaterate "128"
 cl_interp "0"
 cl_interp_ratio "1"
+
+//Writing config *NEEDED*
+host_writeconfig
