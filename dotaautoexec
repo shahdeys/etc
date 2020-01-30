@@ -1,7 +1,10 @@
 // Minimal AutoExec Config for DOTA 2 Reborn
 // Optimized for Ducky Shine 3 and Logitech G502 Mouse
 // by Shah
-// Updated on 5/25/2016
+// Mouse DPI - 1000
+// Windows Tick - 6
+// Use \ for console in game
+// cargs for steam: -console -novid -exec autoexec
 
 
 /////////////////////
@@ -20,7 +23,7 @@ dota_hud_healthbar_number 1		// Health number above the lifebar on		(default 1)
 dota_screen_shake 0			// Screen shake on certain spell effects	(default 1)
 dota_force_right_click_attack 0 	// Rightclick deny disabled			(default 0)
 dota_enable_range_finder 1 		// Visual spell range indicator activated 	(default 1)
-dota_minimap_hero_size 1000 		// Slightly bigger hero icons on minimap 	(default 600)
+dota_minimap_hero_size 750		// Slightly bigger hero icons on minimap 	(default 600)
 dota_minimap_misclick_time 0		// Threshold delay to accept minimap clicks 	(default 0.2)
 dota_camera_accelerate 15 		// Decelerating map scroll 			(50 = insta stop, 1 = smooth slowdown, vanilla DotA would be 50)
 dota_player_multipler_orders 1	// Control all units with CTRL click 		(default 0)	
@@ -39,35 +42,6 @@ dota_health_hurt_delay "0.05"		// (Default 0.1)
 dota_pain_factor "1.5"			// (Default 3)
 dota_pain_fade_rate "1.5"		// (Default 3)
 
-//volume "0.05"				// Volume adjusted for teamspeak
 snd_musicvolume "0"			// Ingame music volume (Min "0" Max "1.0")
 fps_max "120" 				// Max FPS for client to render					(Default 120)
-engine_no_focus_sleep "0"		// Run Dota 2 at full fps when tabbed out			(Default 1)
-con_enable "1"				// Enables the console
 dota_hud_netgraph 1			// Enable Netgraph
-dota_join_regional_chat_channel 0
-
-///////////////
-/// NETCODE /// setup possible.
-///////////////
-
-cl_interp "0.033"			// Interpolate object positions starting this many seconds in past			(Default 0.055, Min 0.033)
-cl_interp_ratio "1"			// Multiplies final result of cl_interp							(Default 2)
-cl_smoothtime "0.1"			// When errors occur smooth display over X time, 0 Disables				(Default 0.1)
-rate "80000"				// Total amount of bandwidth Dota 2 may use						(Default 80000)
-cl_updaterate "30"			// Amount of updates recieved from server per second 					(Default 30, Max 30)
-cl_cmdrate "30"				// Amount of updates sent to server per second 						(Default 30, Max 30)
-
-
-//////////////
-/// SCRIPT ///
-//////////////
-
-bind "O" "dota_camera_set_lookatpos -2273.898682 1832.745483"        		// Jump camera to top rune
-bind "P" "dota_camera_set_lookatpos 3035.773438 -2472.680176"		        // Jump camera to bottom rune and back to hero
-
-// Toggle Auto Attack (Standard)
-bindtoggle "v" dota_player_units_auto_attack_mode 1; 
-
-// Toggle Auto Attack (Always)
-bind "b" dota_player_units_auto_attack_mode 2; 
