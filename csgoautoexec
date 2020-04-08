@@ -78,5 +78,11 @@ cl_updaterate "128"
 cl_interp "0"
 cl_interp_ratio "1"
 
+// Jumpthrow bind
+alias +jumpthrow "+jump;-attack"
+alias -jumpthrow "-jump"
+bind "mouse3" +jumpthrow
+
+
 //Writing config *NEEDED*
 host_writeconfig
