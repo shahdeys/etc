@@ -1,5 +1,13 @@
-# FlexASIO - https://github.com/dechamps/FlexASIO
-# Enable low latency audio streaming for Windows based music production
 # Use WASAPI as the PortAudio host API backend.
 backend = "Windows WASAPI"
-bufferSizeSamples = 128
+bufferSizeSamples = 480
+
+[input]
+device = "Stereo Mix (Realtek High Definition Audio)"
+channels = 2
+suggestedLatencySeconds = 0.0
+wasapiExclusiveMode = true
+
+[output]
+suggestedLatencySeconds = 0.0
+wasapiExclusiveMode = false
