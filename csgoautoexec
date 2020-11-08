@@ -42,9 +42,9 @@ bind "v" "toggle voice_enable"
 mm_dedicated_search_maxping 69
 
 //Switch from PTT to Toggle Voice On/Off
-alias voiceon "+voicerecord; bind c voiceoff"
-alias voiceoff "-voicerecord; bind c voiceon"
-bind "c" "voiceon"
+//alias voiceon "+voicerecord; bind c voiceoff"
+//alias voiceoff "-voicerecord; bind c voiceon"
+//bind "c" "voiceon"
 
 //Default: PTT and Enable Voice
 alias +PTT "voice_enable 1; +voicerecord"; 
@@ -78,10 +78,13 @@ cl_updaterate "128"
 cl_interp "0"
 cl_interp_ratio "1"
 
-// Jumpthrow bind
+//Jumpthrow bind
 alias +jumpthrow "+jump;-attack"
 alias -jumpthrow "-jump"
 bind "mouse3" +jumpthrow
+
+//disable game instructor
+gameinstructor_enable=0
 
 
 //Writing config *NEEDED*
