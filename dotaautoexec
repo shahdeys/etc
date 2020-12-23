@@ -6,42 +6,40 @@
 // Use \ for console in game
 // cargs for steam: -console -novid -exec autoexec
 
+// SCRIPT BINDINGS
+alias "quick_courier" "dota_select_courier; dota_ability_execute 1; dota_courier_burst; dota_courier_deliver; +dota_camera_follow;"
 
-/////////////////////
-// SCRIPT BINDINGS //  Bindings to use the scripts below in the scripts section. Make sure to customize these to your liking.
-/////////////////////
+// SETTINGS
+dota_health_per_vertical_marker "250" 				// Health segmenting in the lifebar 		(default 250)
+dota_health_marker_major_alpha "255"				// Opacity major healthbar divider 		(default 255, 0=invisible 255=opaque)
+dota_health_marker_minor_alpha "128"				// Opacity minor healthbar divider 		(default 128, 0=invisible 255=opaque)
+dota_hud_healthbar_number 1							// Health number above the lifebar on		(default 1)
+dota_screen_shake 0									// Screen shake on certain spell effects	(default 1)
+dota_force_right_click_attack 0 					// Rightclick deny disabled			(default 0)
+dota_enable_range_finder 1 							// Visual spell range indicator activated 	(default 1)
+dota_minimap_hero_size 750							// Slightly bigger hero icons on minimap 	(default 600)
+dota_minimap_misclick_time 0						// Threshold delay to accept minimap clicks 	(default 0.2)
+dota_camera_accelerate 15 							// Decelerating map scroll 			(50 = insta stop, 1 = smooth slowdown, vanilla DotA would be 50)
+dota_player_multipler_orders 1						// Control all units with CTRL click 		(default 0)	
+dota_player_units_auto_attack_mode 0				// Hero autoattack disabled (default 0)
+dota_camera_speed 7500								// Scrolling speed 				(vanilla DotA-like is 6500, default 3000)
+dota_camera_disable_zoom 0							// Disables mousewheel zoom			(default 1)
+dota_reset_camera_on_spawn 0						// Center screen on hero after respawn		(Default 1)
+dota_always_show_player_names 1 					// Always show player names
+dota_ability_quick_cast 1							// Doubletapping to selfcast
 
+// Fade time on visual effects on doing or receiving damage reduced to half duration
+dota_health_hurt_decay_time_max "0.4"				// (Default 0.8)
+dota_health_hurt_decay_time_min "0.15"				// (Default 0.3)
+dota_health_hurt_delay "0.05"						// (Default 0.1)
+dota_pain_factor "1.5"								// (Default 3)
+dota_pain_fade_rate "1.5"							// (Default 3)
 
-//////////////
-// SETTINGS // Most of these settings can not be found in the regular options menu. Feel free to edit them to your likes.
-//////////////
-	
-dota_health_per_vertical_marker "250" 	// Health segmenting in the lifebar 		(default 250)
-dota_health_marker_major_alpha "255"	// Opacity major healthbar divider 		(default 255, 0=invisible 255=opaque)
-dota_health_marker_minor_alpha "128"	// Opacity minor healthbar divider 		(default 128, 0=invisible 255=opaque)
-dota_hud_healthbar_number 1		// Health number above the lifebar on		(default 1)
-dota_screen_shake 0			// Screen shake on certain spell effects	(default 1)
-dota_force_right_click_attack 0 	// Rightclick deny disabled			(default 0)
-dota_enable_range_finder 1 		// Visual spell range indicator activated 	(default 1)
-dota_minimap_hero_size 750		// Slightly bigger hero icons on minimap 	(default 600)
-dota_minimap_misclick_time 0		// Threshold delay to accept minimap clicks 	(default 0.2)
-dota_camera_accelerate 15 		// Decelerating map scroll 			(50 = insta stop, 1 = smooth slowdown, vanilla DotA would be 50)
-dota_player_multipler_orders 1	// Control all units with CTRL click 		(default 0)	
-dota_player_units_auto_attack_mode 0	// Hero autoattack disabled (default 0)
-dota_camera_speed 7500		// Scrolling speed 				(vanilla DotA-like is 6500, default 3000)
-dota_camera_disable_zoom 0		// Disables mousewheel zoom			(default 1)
-dota_reset_camera_on_spawn 0		// Center screen on hero after respawn		(Default 1)
-dota_always_show_player_names 1 // Always show player names
-dota_ability_quick_cast 1		// Doubletapping to selfcast
+// Sound and general UX options
+snd_musicvolume "0"									// Ingame music volume (Min "0" Max "1.0")
+fps_max "144" 										// Max FPS for client to render
+dota_hud_netgraph 1									// Enable Netgraph
 
-
-//Fade time on visual effects on doing or receiving damage reduced to half duration
-dota_health_hurt_decay_time_max "0.4"	// (Default 0.8)
-dota_health_hurt_decay_time_min "0.15"	// (Default 0.3)
-dota_health_hurt_delay "0.05"		// (Default 0.1)
-dota_pain_factor "1.5"			// (Default 3)
-dota_pain_fade_rate "1.5"		// (Default 3)
-
-snd_musicvolume "0"			// Ingame music volume (Min "0" Max "1.0")
-fps_max "120" 				// Max FPS for client to render					(Default 120)
+// Custom Bindings
+bind "x" "quick_courier" 							// Courier Boost Script
 dota_hud_netgraph 1			// Enable Netgraph
