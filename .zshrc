@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/shsyed/.oh-my-zsh"
 
@@ -97,7 +100,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
- alias player="cd /Users/shsyed/work/mystifly/fly-player-mstf"
- alias book="cd /Users/shsyed/work/mystifly/fly-checkout-mstf"
- alias enrich="cd /Users/shsyed/work/enrich/"
- # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+ alias current="cd /Users/shsyed/work/sabre/"
+ alias enrich="cd /Users/shsyed/work/enrichment/"
+ alias mystifly="cd /Users/shsyed/work/mystifly/"
+ alias tvfs="cd /Users/shsyed/work/travelfusion/"
+ alias logs="cd /apps/home/eng/logs/" 
+ alias clear_logs="rm -rf /apps/home/eng/logs/"
+ alias start_player_docs="cd /Users/shsyed/work/firefly_common/fly-checkout-docs && npm run serve"
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+export PATH="/usr/local/opt/node@12/bin:$PATH"
