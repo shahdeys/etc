@@ -86,6 +86,9 @@ bind "mouse3" +jumpthrow
 //disable game instructor
 gameinstructor_enable=0
 
+//disable scroll wheel
+unbind mwheelup 
+unbind mwheeldown
 
 //Writing config *NEEDED*
 host_writeconfig
