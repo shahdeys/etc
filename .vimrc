@@ -65,6 +65,9 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+" Elixir editor
+Plugin 'elixir-editors/vim-elixir'
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
