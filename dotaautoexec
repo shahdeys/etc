@@ -27,6 +27,7 @@ dota_camera_disable_zoom 0							// Disables mousewheel zoom			(default 1)
 dota_reset_camera_on_spawn 0						// Center screen on hero after respawn		(Default 1)
 dota_always_show_player_names 1 					// Always show player names
 dota_ability_quick_cast 1							// Doubletapping to selfcast
+dota_hud_flip 0                       // Keep hud on the left
 
 // Fade time on visual effects on doing or receiving damage reduced to half duration
 dota_health_hurt_decay_time_max "0.4"				// (Default 0.8)
